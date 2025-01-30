@@ -1,0 +1,278 @@
+/* General Reset */
+body {
+    font-family: 'Verdana', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: #ff66b2; /* Pink color */
+    color: white;
+    padding: 15px;
+    animation: slideIn 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Home */
+section {
+    padding: 50px 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+section h2 {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Button Styling */
+button {
+    background: #ff66b2; /* Original pink color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    position: relative; /* Needed for the dynamic color change */
+}
+
+/* Hover effect on button */
+button:hover {
+    background: #ff3385; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
+}
+
+/* Service List Animation */
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact {
+    animation: fadeInUp 3s ease-out;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Contact Page Styles */
+#contact-form {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form h2 {
+    color: #ff66b2; /* Pink header color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling for Contact Form */
+button {
+    background: #ff66b2; /* Original pink color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #ff3385; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.about-us h1 {
+    color: #ff66b2;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h2 {
+    color: #ff66b2;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.services-list, .reasons-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.services-list li, .reasons-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.services-list li::before, .reasons-list li::before {
+    content: "✔";
+    color: #ff66b2;
+    margin-right: 10px;
+}
+
+/* Button Styling for Contact in About Us */
+button {
+    background: #ff66b2; /* Original pink color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #ff3385; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive Design for About Us */
+@media (max-width: 768px) {
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .section-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-list li, .reasons-list li {
+        font-size: 1rem;
+    }
+
+    .services-list, .reasons-list {
+        margin-left: 0;
+    }
+}
