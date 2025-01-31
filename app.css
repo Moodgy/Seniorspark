@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: #ff66b2; /* Pink color */
+    background: #fa3195; /* Pink color */
     color: white;
     padding: 15px;
     animation: slideIn 1s ease-out;
@@ -43,14 +43,14 @@ section h2 {
 
 /* Button Styling */
 button {
-    background: #ff66b2; /* Original pink color */
+    background: #fd0983; /* Original pink color */
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     font-size: 16px;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Removed color change transition */
     opacity: 0;
     animation: fadeInUp 1.5s ease-out forwards;
     position: relative; /* Needed for the dynamic color change */
@@ -58,9 +58,8 @@ button {
 
 /* Hover effect on button */
 button:hover {
-    background: #ff3385; /* Darker pink on hover */
     transform: scale(1.05); /* Slightly enlarges */
-    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
+    box-shadow: 0 0 20px rgba(253, 9, 131, 0.8); /* Enhanced glow */
 }
 
 /* Service List Animation */
@@ -85,15 +84,6 @@ button:hover {
 
 .service:hover {
     transform: translateY(-10px);
-}
-
-/* Contact Section */
-#contact {
-    animation: fadeInUp 3s ease-out;
-}
-
-#contact p {
-    margin-bottom: 10px;
 }
 
 /* Animations */
@@ -126,53 +116,14 @@ button:hover {
     }
 }
 
-/* Contact Page Styles */
-#contact-form {
-    padding: 50px 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form h2 {
-    color: #ff66b2; /* Pink header color */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form div {
-    text-align: left;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Button Styling for Contact Form */
-button {
-    background: #ff66b2; /* Original pink color */
+/* Footer */
+footer {
+    background: #333;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-button:hover {
-    background: #ff3385; /* Darker pink on hover */
-    transform: scale(1.05); /* Slightly enlarges */
-    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
+    padding: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* About Us Section */
@@ -183,7 +134,7 @@ button:hover {
 }
 
 .about-us h1 {
-    color: #ff66b2;
+    color: #fd0581;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -203,7 +154,7 @@ button:hover {
 }
 
 .section-content h2 {
-    color: #ff66b2;
+    color: #f9037e;
     font-size: 2rem;
     margin-bottom: 15px;
 }
@@ -222,57 +173,24 @@ button:hover {
 
 .services-list li::before, .reasons-list li::before {
     content: "✔";
-    color: #ff66b2;
+    color: #ff0080;
     margin-right: 10px;
 }
 
 /* Button Styling for Contact in About Us */
 button {
-    background: #ff66b2; /* Original pink color */
+    background: #fb017e; /* Original pink color */
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     font-size: 16px;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Removed color change transition */
 }
 
 button:hover {
-    background: #ff3385; /* Darker pink on hover */
+    background: #fd0b6c; /* Darker pink on hover */
     transform: scale(1.05); /* Slightly enlarges */
-    box-shadow: 0 0 20px rgba(255, 102, 178, 0.8); /* Enhanced glow */
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* Responsive Design for About Us */
-@media (max-width: 768px) {
-    .about-us h1 {
-        font-size: 2rem;
-    }
-
-    .about-us p {
-        font-size: 1rem;
-    }
-
-    .section-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .services-list li, .reasons-list li {
-        font-size: 1rem;
-    }
-
-    .services-list, .reasons-list {
-        margin-left: 0;
-    }
+    box-shadow: 0 0 20px rgba(254, 4, 129, 0.8); /* Enhanced glow */
 }
