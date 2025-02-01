@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     font-family: 'Verdana', cursive, sans-serif;
     margin: 0;
@@ -7,9 +7,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
+
 header {
-    background: #fa3195; /* Pink color */
+    background: #fa3195; 
     color: white;
     padding: 15px;
     animation: slideIn 1s ease-out;
@@ -30,7 +30,7 @@ nav a {
     text-decoration: none;
 }
 
-/* Section Home */
+
 section {
     padding: 50px 20px;
     opacity: 0;
@@ -41,28 +41,26 @@ section h2 {
     animation: fadeInUp 1s ease-out;
 }
 
-/* Button Styling */
+
 button {
-    background: #fd0983; /* Original pink color */
+    background: #fd0983; 
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     font-size: 16px;
-    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Removed color change transition */
+    transition: transform 0.2s ease, box-shadow 0.3s ease; 
     opacity: 0;
     animation: fadeInUp 1.5s ease-out forwards;
-    position: relative; /* Needed for the dynamic color change */
+    position: relative; 
 }
 
-/* Hover effect on button */
 button:hover {
-    transform: scale(1.05); /* Slightly enlarges */
-    box-shadow: 0 0 20px rgba(253, 9, 131, 0.8); /* Enhanced glow */
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(253, 9, 131, 0.8); 
 }
 
-/* Service List Animation */
 .service-list {
     display: flex;
     justify-content: center;
@@ -86,7 +84,7 @@ button:hover {
     transform: translateY(-10px);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -116,7 +114,7 @@ button:hover {
     }
 }
 
-/* Footer */
+
 footer {
     background: #333;
     color: white;
@@ -126,7 +124,7 @@ footer {
     margin-top: 50px;
 }
 
-/* About Us Section */
+
 .about-us {
     padding: 50px 20px;
     background: #f4f4f4;
@@ -177,20 +175,20 @@ footer {
     margin-right: 10px;
 }
 
-/* Button Styling for Contact in About Us */
+
 button {
-    background: #fb017e; /* Original pink color */
+    background: #fb017e; 
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     font-size: 16px;
-    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Removed color change transition */
+    transition: transform 0.2s ease, box-shadow 0.3s ease; 
 }
 
 button:hover {
-    background: #fd0b6c; /* Darker pink on hover */
-    transform: scale(1.05); /* Slightly enlarges */
-    box-shadow: 0 0 20px rgba(254, 4, 129, 0.8); /* Enhanced glow */
+    background: #fd0b6c; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(254, 4, 129, 0.8); 
 }
