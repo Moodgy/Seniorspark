@@ -9,7 +9,7 @@ body {
 
 
 header {
-    background: #fa3195; 
+    background: #fb3598; 
     color: white;
     padding: 15px;
     animation: slideIn 1s ease-out;
@@ -43,7 +43,7 @@ section h2 {
 
 
 button {
-    background: #fd0983; 
+    background: #fc3f9e; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -56,10 +56,12 @@ button {
     position: relative; 
 }
 
+
 button:hover {
     transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(253, 9, 131, 0.8); 
+    box-shadow: 0 0 20px rgba(250, 62, 156, 0.8);
 }
+
 
 .service-list {
     display: flex;
@@ -132,7 +134,7 @@ footer {
 }
 
 .about-us h1 {
-    color: #fd0581;
+    color: #fe52a8;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -152,7 +154,7 @@ footer {
 }
 
 .section-content h2 {
-    color: #f9037e;
+    color: #f94aa1;
     font-size: 2rem;
     margin-bottom: 15px;
 }
@@ -171,13 +173,13 @@ footer {
 
 .services-list li::before, .reasons-list li::before {
     content: "✔";
-    color: #ff0080;
+    color: #f7449d;
     margin-right: 10px;
 }
 
 
 button {
-    background: #fb017e; 
+    background: #f2469c; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -188,7 +190,7 @@ button {
 }
 
 button:hover {
-    background: #fd0b6c; 
+    background: #fa418b; 
     transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(254, 4, 129, 0.8); 
+    box-shadow: 0 0 20px rgba(251, 55, 153, 0.8); 
 }
